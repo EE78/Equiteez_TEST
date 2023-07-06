@@ -31,10 +31,38 @@
     <div class="subheader__green-screen">
       <div class="green-screen__text-pole">
         <h1>Private Equity Made Easy</h1>
-        <h2>giis on a mission to make private <br> equity easily accesible to all in vestors</h2>
-        <button>Sign up for free</button>
+        <h2>Equiteez is on a mission to make private<br> equity easily accesible to all in vestors</h2>
+        <button id="openModal">Sign up for free</button>
       </div>
       <img src="images/mobile-1.png" alt="mobile">
+      <div class="green-screen__modal" id="signUpModal">
+        <div class="modal-content">
+          <h1>Singnup For Free</h1>
+          <span class="closeModal">&times;</span>
+          <div class="feedback__form">
+            <div class="form__text-pole">
+              <p>Name</p>
+              <input class="text-pole__input" type="text">
+            </div>
+            <div class="form__text-pole">
+              <p>Company</p>
+              <input class="text-pole__input" type="text">
+            </div>
+            <div class="form__text-pole">
+              <p>E-mail*</p>
+              <input class="text-pole__input" type="text">
+            </div>
+            <div class="form__text-pole">
+              <p>Message*</p>
+              <input class="text-pole__message-text" type="text">
+            </div>
+            <div class="form__button">
+              <button>Send</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
     </div>
     <div class="securities-block">
       <h1 class="securities-block__head-text">What Are Digital Securities?</h1>
@@ -186,7 +214,7 @@
       <div class="footer__images">
         <img class="images__logo" src="images/logo.png" alt="logo">
         <p>Contact us</p>
-        <div>
+        <div class="images__bottom-socials">
           <img src="images/twitter.svg" alt="twitter">
           <img src="images/facebook.svg" alt="facebook">
           <img src="images/linkedin.svg" alt="linkedin">
@@ -206,6 +234,8 @@
       <p>©2020 Equiteez.All rights reserved.</p>
     </div>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 
 </html>
