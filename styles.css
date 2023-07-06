@@ -34,6 +34,11 @@ header {
     font-family: 'OpenSans-SemiBold', 'Arial', 'Tahoma', 'Verdana', sans-serif;
 }
 
+.header__links{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
 .links_item {
     color: black;
     font-size: 18px;
@@ -170,7 +175,7 @@ header {
 
 .securities-block__cards-table {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     width: 100%;
     margin-bottom: 54px;
@@ -535,7 +540,7 @@ footer {
     margin-top: 25px;
 }
 
-@media all and (max-width: 360px) {
+@media all and (max-width: 768px)  {
     header {
         display: flex;
         flex-direction: column;
@@ -725,6 +730,7 @@ footer {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        
     }
 
     .news__item {
@@ -829,7 +835,7 @@ footer {
 
 }
 
-@media all and (min-width: 361px) and (max-width: 1366px) {
+@media all and (min-width: 768px) and (max-width: 1024px)  {
     header {
         padding: 30px 110px 30px 110px;
     }
@@ -846,16 +852,13 @@ footer {
         width: 35%;
     }
 
-    .securities-block {
-        padding: 40px 128px 128px 40px;
-    }
-
     .securities-block__subhead-text {
         margin-bottom: 57px;
     }
 
     .securities-block__cards-table {
         margin-bottom: 44px;
+        flex-direction: column
     }
 
     .cards-table__center-item {
@@ -876,23 +879,53 @@ footer {
     }
 
     .products__phone-image {
-        padding: 43px 223px;
+        padding: 43px 153px;
     }
 
     .container__business-cards {
         padding: 100px 223px;
     }
 
+    .business-cards__line{
+        flex-direction: column;
+    }
+
+    .line__item{
+        margin-right: 0;
+    }
+    
     .container__blog {
         padding: 39px 223px;
     }
 
+    .blog__news{
+        flex-direction: column;
+    }
+
     .container__feedback {
         padding: 76px 223px 50px 223px;
+        flex-direction: column;
+    }
+
+    .feedback__main-text{
+        margin-right: 0;
     }
 
     footer {
         padding: 46px 223px 19px 223px;
         background-color: #252525;
     }
+
+    .footer__container{
+        flex-direction: column;
+    }
+
+    .footer__navigator{
+        margin-left: 0;
+    }
+
+    .images__bottom-socials{
+        margin-bottom: 10px;
+    }
 }
+
